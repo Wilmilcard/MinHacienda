@@ -1,4 +1,4 @@
-﻿using IceShop.Models;
+﻿
 using MinHacienda.Models;
 using System;
 
@@ -13,6 +13,7 @@ class Program
 
     static void Main()
     {
+
         CargueHelados();
         CargueAdicionales();
         Mensaje();
@@ -154,6 +155,10 @@ class Program
     {
         var count = 1;
         Console.Clear();
+        StringWriter stringWriter = new StringWriter();
+        TextWriter originalConsoleOut = Console.Out;
+        Console.SetOut(stringWriter);
+
         FacturaEncabezado();
         Console.WriteLine();
         Console.WriteLine($"# | CODIGO | PRODUCTO | VALOR");
@@ -167,7 +172,9 @@ class Program
         var total = factura.DetalleHelados.Sum(x => x.Valor) + factura.DetalleAdicionales.Sum(x => x.Valor);
         FacturaPieDePagina(total);
 
-        CrearFactura(nombre);
+        string salidaCapturada = stringWriter.ToString();
+        Console.SetOut(originalConsoleOut);
+        CrearFactura(nombre, salidaCapturada);
     }
 
     static void FacturaEncabezado()
@@ -198,31 +205,17 @@ class Program
         Console.WriteLine("-------------------");
     }
 
-    static void CrearFactura(string _nombre)
+    static void CrearFactura(string _nombre, string _content)
     {
-        var stringWriter = new StringWriter();
-
-        // Redirigir la salida estándar a StringWriter
-        Console.SetOut(stringWriter);
-        string capturedText = stringWriter.ToString();
 
         string path = @$"C:\Users\jleon\Desktop\factura_{_nombre}.txt";
         if (!File.Exists(path))
         {
             using (StreamWriter sw = File.CreateText(path))
             {
-                sw.WriteLine(stringWriter);
+                sw.WriteLine(_content);
             }
         }
-
-        //using (StreamReader sr = File.OpenText(path))
-        //{
-        //    string s = "";
-        //    while ((s = sr.ReadLine()) != null)
-        //    {
-        //        Console.WriteLine(s);
-        //    }
-        //}
     }
     #endregion
 
