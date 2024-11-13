@@ -1,6 +1,9 @@
 ﻿
+using Microsoft.Data.SqlClient;
 using MinHacienda.Models;
 using System;
+using System.Data;
+using System.Data.SqlTypes;
 
 class Program
 {
@@ -13,7 +16,7 @@ class Program
 
     static void Main()
     {
-
+        sql();
         CargueHelados();
         CargueAdicionales();
         Mensaje();
@@ -23,6 +26,31 @@ class Program
 
         Console.WriteLine($"EJECUCION TERMINADA POR {nombre}");
         Console.ReadLine();
+    }
+
+    static void sql()
+    {
+        try
+        {
+            string connectionString = "Server=ASW1741\\SQLEXPRESS;Database=min_hacienda;Trusted_Connection=True;";
+
+            using (SqlConnection _con = new SqlConnection(connectionString))
+            {
+                string path = "C:\\Users\\jleon\\source\\repos\\MinHacienda\\MinHacienda\\Utils\\createDB.sql";
+                string query = File.ReadAllText(path);
+
+                using (SqlCommand _cmd = new SqlCommand(query, _con))
+                {
+                    _con.Open();
+                    _cmd.ExecuteNonQuery();
+                    _con.Close();
+                }
+            }
+        }
+        catch (Exception ex) 
+        {
+            Console.WriteLine(ex.ToString()); 
+        }
     }
 
     static void Mensaje()
