@@ -1,4 +1,8 @@
-﻿-- R
+﻿
+--------------------
+-- READ ------------
+--------------------
+
 select 'Saludos JUAN LEON' as mensaje
 
 select
@@ -14,14 +18,26 @@ select
 from
       Client as c
 
-select * from Client as c
+select * from Client as c;
 
--- U
-update Client set Phone = '000000' where ClientId = 1 and FullName = 'Juan'
+select 
+	c.FullName,
+	i.InvoiceId,
+	i.ExpeditionDate,
+	d.DetailId,
+	p.ProductName,
+	d.ProductNumer,
+	d.Cant,
+	d.Total as valor_unitario,
+	(d.Total * d.Cant) as total
+from 
+	Detail d
+	inner join Products p on d.FK_ProductId = p.ProductId
+	inner join Invoice i on d.FK_InvoiceId = i.InvoiceId
+	inner join Client c on i.FK_ClientId = c.ClientId
+where
+	i.InvoiceId = 6;
 
--- D
-delete Client where ClientId = 1 and FullName = 'Juan'
-go
 
 SELECT
 	I.InvoiceId,
@@ -31,4 +47,24 @@ SELECT
 	C.FullName
 FROM Invoice I
 	INNER JOIN Client C on C.ClientId = I.FK_ClientId
-where I.Total > 50000
+where I.Total > 50000;
+
+
+
+
+
+------------------------
+-- UPDATE --------------
+------------------------
+
+update Client set Phone = '000000' where ClientId = 1 and FullName = 'Juan'
+
+
+
+
+-------------------------
+-- DELETE ---------------
+-------------------------
+
+delete Client where ClientId = 1 and FullName = 'Juan'
+go
