@@ -4,6 +4,7 @@ using MinHacienda.Models;
 using System;
 using System.Data;
 using System.Data.SqlTypes;
+using System.Reflection;
 
 class Program
 {
@@ -36,8 +37,9 @@ class Program
 
             using (SqlConnection _con = new SqlConnection(connectionString))
             {
-                string path = "C:\\Users\\jleon\\source\\repos\\MinHacienda\\MinHacienda\\Utils\\createDB.sql";
-                string query = File.ReadAllText(path);
+                string projectDirectory = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", ".."));
+                string filePath = Path.Combine(projectDirectory, "Utils", "createDB.sql");
+                string query = File.ReadAllText(filePath);
 
                 using (SqlCommand _cmd = new SqlCommand(query, _con))
                 {
