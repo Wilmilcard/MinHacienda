@@ -1,0 +1,6 @@
+@MinHaciendaApi_HostAddress = http://localhost:5069
+
+GET {{MinHaciendaApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
