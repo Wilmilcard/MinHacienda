@@ -18,8 +18,5 @@ namespace MinHaciendaDomain.Models
         public string Apellido { get; set; }
         public string Email { get; set; }
         public string Departamento { get; set; }
-
-        // Relaciones
-        public virtual List<Asignacion> Asignaciones { get; set; }
     }
 }

@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MinHaciendaApi.HttpRequest;
+using MinHaciendaApi.Utils;
 using MinHaciendaDomain.DB;
 using MinHaciendaDomain.Models;
 
@@ -21,18 +23,16 @@ namespace MinHaciendaApi.Controllers
             _context = context;
         }
 
-        // GET: api/Estudiantes
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Estudiante>>> GetEstudiantes()
         {
-            return await _context.Estudiantes.ToListAsync();
+            return await _context.estudiantes.ToListAsync();
         }
 
-        // GET: api/Estudiantes/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Estudiante>> GetEstudiante(int id)
         {
-            var estudiante = await _context.Estudiantes.FindAsync(id);
+            var estudiante = await _context.estudiantes.FindAsync(id);
 
             if (estudiante == null)
             {
@@ -41,9 +41,7 @@ namespace MinHaciendaApi.Controllers
 
             return estudiante;
         }
-
-        // PUT: api/Estudiantes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+                
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEstudiante(int id, Estudiante estudiante)
         {
@@ -73,28 +71,65 @@ namespace MinHaciendaApi.Controllers
             return NoContent();
         }
 
-        // POST: api/Estudiantes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Estudiante>> PostEstudiante(Estudiante estudiante)
+        [HttpPost("[Action]")]
+        public async Task<IActionResult> Create([FromBody] EstudianteRequest request)
         {
-            _context.Estudiantes.Add(estudiante);
-            await _context.SaveChangesAsync();
+            try
+            {
+                if (request == null)
+                    return BadRequest();
 
-            return CreatedAtAction("GetEstudiante", new { id = estudiante.EstudianteId }, estudiante);
+                using (var transaccion = _context.Database.BeginTransaction())
+                {
+                    var NuevoEstudiante = new Estudiante
+                    {
+                        Nombre = request.Nombre,
+                        Apellido = request.Apellido,
+                        Email = request.Email,
+                        Genero = request.Genero,
+                        FechaNacimiento = request.FechaNacimiento,
+                        Creado = Globals.FechaActual(),
+                        CreadoPor = Globals.UserSystem()
+                    };
+
+                    await _context.estudiantes.AddAsync(NuevoEstudiante);
+                    _context.SaveChanges();
+
+                    transaccion.Commit();
+                }
+
+                var response = new
+                {
+                    succcess = true,
+                    data = "Insertado Correctamente"
+                };
+
+                return new OkObjectResult(response);
+            }
+            catch (Exception ex)
+            {
+                var response = new
+                {
+                    succcess = false,
+                    error = ex.Message,
+                    errorCode = ex.HResult,
+                    stackTrace = ex.StackTrace // Agregar el stack trace
+                };
+
+                return new BadRequestObjectResult(response);
+            }
         }
 
-        // DELETE: api/Estudiantes/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEstudiante(int id)
         {
-            var estudiante = await _context.Estudiantes.FindAsync(id);
+            var estudiante = await _context.estudiantes.FindAsync(id);
             if (estudiante == null)
             {
                 return NotFound();
             }
 
-            _context.Estudiantes.Remove(estudiante);
+            _context.estudiantes.Remove(estudiante);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -102,7 +137,7 @@ namespace MinHaciendaApi.Controllers
 
         private bool EstudianteExists(int id)
         {
-            return _context.Estudiantes.Any(e => e.EstudianteId == id);
+            return _context.estudiantes.Any(e => e.EstudianteId == id);
         }
     }
 }
