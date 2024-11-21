@@ -12,7 +12,7 @@ using MinHaciendaDomain.DB;
 namespace MinHaciendaDomain.Migrations
 {
     [DbContext(typeof(MinHaciendaContext))]
-    [Migration("20241120194232_CrearBD")]
+    [Migration("20241121150718_CrearBD")]
     partial class CrearBD
     {
         /// <inheritdoc />
@@ -228,558 +228,558 @@ namespace MinHaciendaDomain.Migrations
                         {
                             ProfesorId = 1,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Bradtke",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Upton",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "quia",
-                            Email = "Marion.Bradtke59@gmail.com",
-                            Nombre = "Marion"
+                            Departamento = "accusamus",
+                            Email = "Damon_Upton68@yahoo.com",
+                            Nombre = "Damon"
                         },
                         new
                         {
                             ProfesorId = 2,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Rutherford",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Fay",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "quaerat",
-                            Email = "Delbert23@hotmail.com",
-                            Nombre = "Delbert"
+                            Departamento = "voluptates",
+                            Email = "Robin_Fay@gmail.com",
+                            Nombre = "Robin"
                         },
                         new
                         {
                             ProfesorId = 3,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Moen",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Abernathy",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "beatae",
-                            Email = "Brooke.Moen9@yahoo.com",
-                            Nombre = "Brooke"
+                            Departamento = "accusamus",
+                            Email = "Marlene72@yahoo.com",
+                            Nombre = "Marlene"
                         },
                         new
                         {
                             ProfesorId = 4,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Smith",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "McCullough",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "cupiditate",
-                            Email = "Teresa.Smith89@hotmail.com",
-                            Nombre = "Teresa"
+                            Departamento = "quos",
+                            Email = "George.McCullough@hotmail.com",
+                            Nombre = "George"
                         },
                         new
                         {
                             ProfesorId = 5,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Gutmann",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Heathcote",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "architecto",
-                            Email = "Inez_Gutmann82@gmail.com",
-                            Nombre = "Inez"
+                            Departamento = "nihil",
+                            Email = "Viola77@hotmail.com",
+                            Nombre = "Viola"
                         },
                         new
                         {
                             ProfesorId = 6,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Treutel",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Bashirian",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "inventore",
-                            Email = "Olivia23@yahoo.com",
-                            Nombre = "Olivia"
+                            Departamento = "ea",
+                            Email = "Patsy.Bashirian54@yahoo.com",
+                            Nombre = "Patsy"
                         },
                         new
                         {
                             ProfesorId = 7,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Senger",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Erdman",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "autem",
-                            Email = "Lionel74@gmail.com",
-                            Nombre = "Lionel"
+                            Departamento = "possimus",
+                            Email = "Gilbert_Erdman@yahoo.com",
+                            Nombre = "Gilbert"
                         },
                         new
                         {
                             ProfesorId = 8,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Kihn",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Mills",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "ea",
-                            Email = "Erick34@yahoo.com",
-                            Nombre = "Erick"
+                            Departamento = "ut",
+                            Email = "Beth47@gmail.com",
+                            Nombre = "Beth"
                         },
                         new
                         {
                             ProfesorId = 9,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Cartwright",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Rau",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "enim",
-                            Email = "Kim_Cartwright@yahoo.com",
-                            Nombre = "Kim"
+                            Departamento = "in",
+                            Email = "Greg13@gmail.com",
+                            Nombre = "Greg"
                         },
                         new
                         {
                             ProfesorId = 10,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Dickinson",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Kub",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "quis",
-                            Email = "Pete_Dickinson@yahoo.com",
-                            Nombre = "Pete"
+                            Departamento = "in",
+                            Email = "Nettie_Kub@hotmail.com",
+                            Nombre = "Nettie"
                         },
                         new
                         {
                             ProfesorId = 11,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Braun",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Schuster",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "eum",
-                            Email = "Lamar.Braun82@gmail.com",
-                            Nombre = "Lamar"
+                            Departamento = "ut",
+                            Email = "Tracy.Schuster11@gmail.com",
+                            Nombre = "Tracy"
                         },
                         new
                         {
                             ProfesorId = 12,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Hand",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Prosacco",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "laboriosam",
-                            Email = "Taylor.Hand44@gmail.com",
-                            Nombre = "Taylor"
+                            Departamento = "sint",
+                            Email = "Lionel_Prosacco28@yahoo.com",
+                            Nombre = "Lionel"
                         },
                         new
                         {
                             ProfesorId = 13,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Reinger",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Mertz",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "esse",
-                            Email = "Joel59@hotmail.com",
-                            Nombre = "Joel"
+                            Departamento = "deleniti",
+                            Email = "Delbert_Mertz14@gmail.com",
+                            Nombre = "Delbert"
                         },
                         new
                         {
                             ProfesorId = 14,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Feil",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Lesch",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "eum",
-                            Email = "Toby_Feil@yahoo.com",
-                            Nombre = "Toby"
+                            Departamento = "tenetur",
+                            Email = "Derek.Lesch71@hotmail.com",
+                            Nombre = "Derek"
                         },
                         new
                         {
                             ProfesorId = 15,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Howell",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Lind",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "in",
-                            Email = "Ebony.Howell@hotmail.com",
-                            Nombre = "Ebony"
+                            Departamento = "dolorem",
+                            Email = "Ashley44@hotmail.com",
+                            Nombre = "Ashley"
                         },
                         new
                         {
                             ProfesorId = 16,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Langworth",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Willms",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "sed",
-                            Email = "Randall.Langworth41@yahoo.com",
-                            Nombre = "Randall"
+                            Departamento = "illum",
+                            Email = "Cindy_Willms83@yahoo.com",
+                            Nombre = "Cindy"
                         },
                         new
                         {
                             ProfesorId = 17,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Rohan",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Hauck",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "autem",
-                            Email = "Paula23@hotmail.com",
-                            Nombre = "Paula"
+                            Departamento = "laudantium",
+                            Email = "Florence.Hauck70@hotmail.com",
+                            Nombre = "Florence"
                         },
                         new
                         {
                             ProfesorId = 18,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Hoppe",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Schmidt",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "vel",
-                            Email = "Stuart.Hoppe@gmail.com",
-                            Nombre = "Stuart"
+                            Departamento = "animi",
+                            Email = "Bryant.Schmidt34@yahoo.com",
+                            Nombre = "Bryant"
                         },
                         new
                         {
                             ProfesorId = 19,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Walter",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Gorczany",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "placeat",
-                            Email = "Rhonda82@yahoo.com",
-                            Nombre = "Rhonda"
+                            Departamento = "a",
+                            Email = "Cora_Gorczany55@gmail.com",
+                            Nombre = "Cora"
                         },
                         new
                         {
                             ProfesorId = 20,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Christiansen",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Grady",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "nemo",
-                            Email = "Josephine_Christiansen36@yahoo.com",
-                            Nombre = "Josephine"
+                            Departamento = "non",
+                            Email = "Roland_Grady52@gmail.com",
+                            Nombre = "Roland"
                         },
                         new
                         {
                             ProfesorId = 21,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Hammes",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Braun",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "eveniet",
-                            Email = "Aubrey13@gmail.com",
-                            Nombre = "Aubrey"
+                            Departamento = "quisquam",
+                            Email = "Stacy_Braun@gmail.com",
+                            Nombre = "Stacy"
                         },
                         new
                         {
                             ProfesorId = 22,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Schmitt",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Satterfield",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "qui",
-                            Email = "Lorena_Schmitt@yahoo.com",
-                            Nombre = "Lorena"
+                            Departamento = "voluptatem",
+                            Email = "Verna_Satterfield88@yahoo.com",
+                            Nombre = "Verna"
                         },
                         new
                         {
                             ProfesorId = 23,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Pfeffer",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Auer",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "voluptatem",
-                            Email = "Camille.Pfeffer43@hotmail.com",
-                            Nombre = "Camille"
+                            Departamento = "molestias",
+                            Email = "Sammy29@gmail.com",
+                            Nombre = "Sammy"
                         },
                         new
                         {
                             ProfesorId = 24,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Dibbert",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Rutherford",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "quo",
-                            Email = "Ana48@yahoo.com",
-                            Nombre = "Ana"
+                            Departamento = "hic",
+                            Email = "Kim41@hotmail.com",
+                            Nombre = "Kim"
                         },
                         new
                         {
                             ProfesorId = 25,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Larkin",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Rice",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "enim",
-                            Email = "Bruce_Larkin61@gmail.com",
-                            Nombre = "Bruce"
+                            Departamento = "rerum",
+                            Email = "Patrick65@hotmail.com",
+                            Nombre = "Patrick"
                         },
                         new
                         {
                             ProfesorId = 26,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Wiza",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Schroeder",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "debitis",
-                            Email = "Irene_Wiza@gmail.com",
-                            Nombre = "Irene"
+                            Departamento = "id",
+                            Email = "Ricardo.Schroeder@yahoo.com",
+                            Nombre = "Ricardo"
                         },
                         new
                         {
                             ProfesorId = 27,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Farrell",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Mayer",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "veniam",
-                            Email = "Gary_Farrell55@hotmail.com",
-                            Nombre = "Gary"
+                            Departamento = "sed",
+                            Email = "Angelo.Mayer55@gmail.com",
+                            Nombre = "Angelo"
                         },
                         new
                         {
                             ProfesorId = 28,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Raynor",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Fritsch",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "omnis",
-                            Email = "Jody88@gmail.com",
-                            Nombre = "Jody"
+                            Departamento = "est",
+                            Email = "Maxine43@gmail.com",
+                            Nombre = "Maxine"
                         },
                         new
                         {
                             ProfesorId = 29,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Jaskolski",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Hammes",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "dolores",
-                            Email = "Patsy_Jaskolski@yahoo.com",
-                            Nombre = "Patsy"
+                            Departamento = "beatae",
+                            Email = "Brittany57@gmail.com",
+                            Nombre = "Brittany"
                         },
                         new
                         {
                             ProfesorId = 30,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Schumm",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Kub",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "recusandae",
-                            Email = "Billie77@gmail.com",
-                            Nombre = "Billie"
+                            Departamento = "neque",
+                            Email = "Beverly_Kub@hotmail.com",
+                            Nombre = "Beverly"
                         },
                         new
                         {
                             ProfesorId = 31,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Kutch",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Dickens",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "iusto",
-                            Email = "Ervin_Kutch4@yahoo.com",
-                            Nombre = "Ervin"
+                            Departamento = "incidunt",
+                            Email = "Santos.Dickens@yahoo.com",
+                            Nombre = "Santos"
                         },
                         new
                         {
                             ProfesorId = 32,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Parisian",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Cole",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "sed",
-                            Email = "Alice.Parisian61@hotmail.com",
-                            Nombre = "Alice"
+                            Departamento = "eaque",
+                            Email = "Alfred_Cole@hotmail.com",
+                            Nombre = "Alfred"
                         },
                         new
                         {
                             ProfesorId = 33,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Padberg",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Mills",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "eum",
-                            Email = "Sherri8@yahoo.com",
-                            Nombre = "Sherri"
+                            Departamento = "iusto",
+                            Email = "Lillian.Mills16@hotmail.com",
+                            Nombre = "Lillian"
                         },
                         new
                         {
                             ProfesorId = 34,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Donnelly",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Runolfsson",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
                             Departamento = "saepe",
-                            Email = "Mercedes48@hotmail.com",
-                            Nombre = "Mercedes"
+                            Email = "Melanie.Runolfsson3@gmail.com",
+                            Nombre = "Melanie"
                         },
                         new
                         {
                             ProfesorId = 35,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Becker",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Wilderman",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "est",
-                            Email = "Jose54@hotmail.com",
-                            Nombre = "Jose"
+                            Departamento = "deserunt",
+                            Email = "Brandon.Wilderman67@hotmail.com",
+                            Nombre = "Brandon"
                         },
                         new
                         {
                             ProfesorId = 36,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Stanton",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Wintheiser",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "eum",
-                            Email = "Todd76@hotmail.com",
-                            Nombre = "Todd"
+                            Departamento = "sed",
+                            Email = "Shawn58@gmail.com",
+                            Nombre = "Shawn"
                         },
                         new
                         {
                             ProfesorId = 37,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Maggio",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Koch",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "recusandae",
-                            Email = "Peter.Maggio@hotmail.com",
-                            Nombre = "Peter"
+                            Departamento = "rerum",
+                            Email = "Christopher14@gmail.com",
+                            Nombre = "Christopher"
                         },
                         new
                         {
                             ProfesorId = 38,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Roberts",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Zemlak",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "omnis",
-                            Email = "Virginia_Roberts@hotmail.com",
-                            Nombre = "Virginia"
+                            Departamento = "alias",
+                            Email = "Paula_Zemlak78@gmail.com",
+                            Nombre = "Paula"
                         },
                         new
                         {
                             ProfesorId = 39,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Donnelly",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Lang",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "quia",
-                            Email = "Wesley.Donnelly65@yahoo.com",
-                            Nombre = "Wesley"
+                            Departamento = "quidem",
+                            Email = "Amanda_Lang@hotmail.com",
+                            Nombre = "Amanda"
                         },
                         new
                         {
                             ProfesorId = 40,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Runte",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Schimmel",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "consequatur",
-                            Email = "Lena85@yahoo.com",
-                            Nombre = "Lena"
+                            Departamento = "at",
+                            Email = "Fred_Schimmel52@gmail.com",
+                            Nombre = "Fred"
                         },
                         new
                         {
                             ProfesorId = 41,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Lockman",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Hoppe",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "aut",
-                            Email = "Ora_Lockman18@gmail.com",
-                            Nombre = "Ora"
+                            Departamento = "cumque",
+                            Email = "Kenny_Hoppe@yahoo.com",
+                            Nombre = "Kenny"
                         },
                         new
                         {
                             ProfesorId = 42,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Wiza",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Daniel",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "unde",
-                            Email = "Jenna59@yahoo.com",
-                            Nombre = "Jenna"
+                            Departamento = "tempore",
+                            Email = "Herbert_Daniel78@yahoo.com",
+                            Nombre = "Herbert"
                         },
                         new
                         {
                             ProfesorId = 43,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "D'Amore",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Herman",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "iste",
-                            Email = "Elisa37@gmail.com",
-                            Nombre = "Elisa"
+                            Departamento = "aperiam",
+                            Email = "Curtis.Herman34@yahoo.com",
+                            Nombre = "Curtis"
                         },
                         new
                         {
                             ProfesorId = 44,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Moen",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Little",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "et",
-                            Email = "Zachary.Moen45@yahoo.com",
-                            Nombre = "Zachary"
+                            Departamento = "sed",
+                            Email = "Earnest.Little@gmail.com",
+                            Nombre = "Earnest"
                         },
                         new
                         {
                             ProfesorId = 45,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Hamill",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Little",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "voluptatum",
-                            Email = "Hilda_Hamill87@gmail.com",
-                            Nombre = "Hilda"
+                            Departamento = "alias",
+                            Email = "Gina_Little@yahoo.com",
+                            Nombre = "Gina"
                         },
                         new
                         {
                             ProfesorId = 46,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Kilback",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Robel",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "ut",
-                            Email = "Kevin.Kilback@yahoo.com",
-                            Nombre = "Kevin"
+                            Departamento = "officia",
+                            Email = "Amanda.Robel67@hotmail.com",
+                            Nombre = "Amanda"
                         },
                         new
                         {
                             ProfesorId = 47,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Conn",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Pacocha",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "necessitatibus",
-                            Email = "Simon54@yahoo.com",
-                            Nombre = "Simon"
+                            Departamento = "fugit",
+                            Email = "Tonya95@yahoo.com",
+                            Nombre = "Tonya"
                         },
                         new
                         {
                             ProfesorId = 48,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Jakubowski",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Bailey",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "nostrum",
-                            Email = "Lynda_Jakubowski51@hotmail.com",
-                            Nombre = "Lynda"
+                            Departamento = "fuga",
+                            Email = "Celia.Bailey39@hotmail.com",
+                            Nombre = "Celia"
                         },
                         new
                         {
                             ProfesorId = 49,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Lueilwitz",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Morar",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "nam",
-                            Email = "Cory_Lueilwitz@yahoo.com",
-                            Nombre = "Cory"
+                            Departamento = "modi",
+                            Email = "Lyle_Morar73@yahoo.com",
+                            Nombre = "Lyle"
                         },
                         new
                         {
                             ProfesorId = 50,
                             Actualizado = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Apellido = "Wunsch",
-                            Creado = new DateTime(2024, 11, 20, 14, 42, 31, 220, DateTimeKind.Local).AddTicks(2573),
+                            Apellido = "Wolff",
+                            Creado = new DateTime(2024, 11, 21, 10, 7, 16, 575, DateTimeKind.Local).AddTicks(2515),
                             CreadoPor = "MinHacienda",
-                            Departamento = "est",
-                            Email = "Vincent_Wunsch23@yahoo.com",
-                            Nombre = "Vincent"
+                            Departamento = "et",
+                            Email = "Morris.Wolff@yahoo.com",
+                            Nombre = "Morris"
                         });
                 });
 
             modelBuilder.Entity("MinHaciendaDomain.Models.Asignacion", b =>
                 {
                     b.HasOne("MinHaciendaDomain.Models.Curso", "Curso")
-                        .WithMany("Asignaciones")
+                        .WithMany()
                         .HasForeignKey("CursoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -798,13 +798,13 @@ namespace MinHaciendaDomain.Migrations
             modelBuilder.Entity("MinHaciendaDomain.Models.Inscripcion", b =>
                 {
                     b.HasOne("MinHaciendaDomain.Models.Curso", "Curso")
-                        .WithMany("Inscripciones")
+                        .WithMany()
                         .HasForeignKey("CursoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MinHaciendaDomain.Models.Estudiante", "Estudiante")
-                        .WithMany("Inscripciones")
+                        .WithMany()
                         .HasForeignKey("EstudianteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -812,18 +812,6 @@ namespace MinHaciendaDomain.Migrations
                     b.Navigation("Curso");
 
                     b.Navigation("Estudiante");
-                });
-
-            modelBuilder.Entity("MinHaciendaDomain.Models.Curso", b =>
-                {
-                    b.Navigation("Asignaciones");
-
-                    b.Navigation("Inscripciones");
-                });
-
-            modelBuilder.Entity("MinHaciendaDomain.Models.Estudiante", b =>
-                {
-                    b.Navigation("Inscripciones");
                 });
 #pragma warning restore 612, 618
         }

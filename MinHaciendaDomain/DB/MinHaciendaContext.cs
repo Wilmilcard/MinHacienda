@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using MinHaciendaDomain.Models;
 using MinHaciendaDomain.Seed;
 using System;
@@ -25,6 +26,13 @@ namespace MinHaciendaDomain.DB
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Seed();
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder
+                .ConfigureWarnings(warnings => warnings
+                    .Log(RelationalEventId.PendingModelChangesWarning));
         }
     }
 }

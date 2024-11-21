@@ -18,9 +18,5 @@ namespace MinHaciendaDomain.Models
         public string Nombre { get; set; }
         public string Codigo { get; set; }
         public int Creditos { get; set; }
-
-        // Relaciones
-        public virtual List<Inscripcion> Inscripciones { get; set; }
-        public virtual List<Asignacion> Asignaciones { get; set; }
     }
 }
