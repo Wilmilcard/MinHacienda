@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MinHaciendaDomain.Seed
 {
@@ -50,22 +51,72 @@ namespace MinHaciendaDomain.Seed
                 modelBuilder.Entity<Estudiante>().HasData(e);
             #endregion
 
-            /*
-            #region Curso
-            id = 1;
-            var fakerCurso = new Bogus.Faker<Curso>()
-                .RuleFor(x => x.CursoId, f => id++)
-                .RuleFor(x => x.Nombre, f => f.Lorem.Word())
-                .RuleFor(x => x.Codigo, f => f.Lorem.Word())
-                .RuleFor(x => x.Creditos, f => random.Next(10, 50))
-                .RuleFor(x => x.CreadoPor, f => system)
-                .RuleFor(x => x.Creado, f => fecha);
 
-            var listCursos = fakerCurso.Generate(5);
+            #region Curso
+            var listCursos = new List<Curso>()
+            {
+                new Curso
+                {
+                    CursoId = 1,
+                    Nombre = "Programacion",
+                    Codigo = "POO",
+                    Creditos = 25,
+                    CreadoPor = system,
+                    Creado = fecha
+                },
+                new Curso
+                {
+                    CursoId = 2,
+                    Nombre = "Ingles",
+                    Codigo = "ING",
+                    Creditos = 15,
+                    CreadoPor = system,
+                    Creado = fecha
+                },
+                new Curso
+                {
+                    CursoId = 3,
+                    Nombre = "Calculo II",
+                    Codigo = "CAL",
+                    Creditos = 20,
+                    CreadoPor = system,
+                    Creado = fecha
+                },
+                new Curso
+                {
+                    CursoId = 4,
+                    Nombre = "Arquitectura",
+                    Codigo = "ARQ",
+                    Creditos = 25,
+                    CreadoPor = system,
+                    Creado = fecha
+                },
+                new Curso
+                {
+                    CursoId = 5,
+                    Nombre = "Seguridad",
+                    Codigo = "SEG",
+                    Creditos = 30,
+                    CreadoPor = system,
+                    Creado = fecha
+                }
+            };
+
+            //id = 1;
+            //var fakerCurso = new Bogus.Faker<Curso>()
+            //    .RuleFor(x => x.CursoId, f => id++)
+            //    .RuleFor(x => x.Nombre, f => f.Lorem.Word())
+            //    .RuleFor(x => x.Codigo, f => f.Lorem.Word())
+            //    .RuleFor(x => x.Creditos, f => random.Next(10, 50))
+            //    .RuleFor(x => x.CreadoPor, f => system)
+            //    .RuleFor(x => x.Creado, f => fecha);
+
+            
             foreach (var c in listCursos)
                 modelBuilder.Entity<Curso>().HasData(c);
             #endregion
 
+            
             #region Asignacion
             id = 1;
             foreach(var p in listProfesores)
@@ -80,7 +131,7 @@ namespace MinHaciendaDomain.Seed
                     Creado = fecha
                 };
 
-                modelBuilder.Entity<Curso>().HasData(fakerAsignacion);
+                modelBuilder.Entity<Asignacion>().HasData(fakerAsignacion);
             }
             #endregion
 
@@ -93,15 +144,14 @@ namespace MinHaciendaDomain.Seed
                     InscripcionId = id++,
                     EstudianteId = e.EstudianteId,
                     CursoId = random.Next(1, listCursos.Count),
-                    FechaInscripcion = new DateTime(2020,1,1).AddDays(random.Next(1,1000)),
+                    FechaInscripcion = new DateTime(2020, 1, 1).AddDays(random.Next(1, 1000)),
                     CreadoPor = system,
                     Creado = fecha
                 };
 
-                modelBuilder.Entity<Curso>().HasData(fakerInscripcion);
+                modelBuilder.Entity<Inscripcion>().HasData(fakerInscripcion);
             }
             #endregion
-            */
         }
 
     }

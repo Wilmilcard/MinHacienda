@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MinHaciendaDomain.DB;
 
@@ -11,9 +12,11 @@ using MinHaciendaDomain.DB;
 namespace MinHaciendaDomain.Migrations
 {
     [DbContext(typeof(MinHaciendaContext))]
-    partial class MinHaciendaContextModelSnapshot : ModelSnapshot
+    [Migration("20241121202019_CreateDB")]
+    partial class CreateDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
