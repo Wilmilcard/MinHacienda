@@ -14,7 +14,6 @@ namespace MinHaciendaDomain.Models
         [Key]
         [Column("CursoId")]
         public int CursoId { get; set; }
-        [StringLength(50)]
         public string Nombre { get; set; }
         public string Codigo { get; set; }
         public int Creditos { get; set; }

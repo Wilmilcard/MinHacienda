@@ -16,7 +16,7 @@ namespace MinHaciendaDomain.Models
         public int AsignacionId { get; set; }
         public int ProfesorId { get; set; }
         public int CursoId { get; set; }
-        public string Semestre { get; set; }
+        public int Semestre { get; set; }
 
         // Relaciones
         public virtual Profesor Profesor { get; set; }
