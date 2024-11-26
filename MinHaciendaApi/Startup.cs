@@ -1,17 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using MinHaciendaApi.Utils;
 using MinHaciendaDomain;
 using MinHaciendaDomain.DB;
 using System;
+using System.Configuration;
+using System.Text;
 
 namespace MinHaciendaApi
 {
     public class Startup
     {
-        public IConfiguration _Configuration;
+        public IConfiguration _configuration;
         public Startup(IConfiguration configuration)
         {
-            this._Configuration = configuration;
+            this._configuration = configuration;
         }
 
         public static WebApplication InitializarApp(string[] args)
@@ -25,13 +29,33 @@ namespace MinHaciendaApi
 
         public static void ConfigureServices(WebApplicationBuilder builder)
         {
-            // Crear variable de conexion
-            builder.Services.AddCustomizedDataStore(builder.Configuration);
+            var config = builder.Configuration;
+
+            // Crear variables y servicios de BD
+            builder.Services.AddCustomizedDataStore(config);
             builder.Services.AddCustomizedServicesProject();
             builder.Services.AddCustomizedRepository();
 
             //Global Exceptions
             builder.Services.AddTransient<GlobalExceptionHandler>();
+
+            //Authenticathion API
+            builder.Services.AddAuthentication(auth =>
+            {
+                auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(jwt =>
+            {
+                jwt.RequireHttpsMetadata = false;
+                jwt.SaveToken = true;
+                jwt.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(config.GetValue<string>("SecurityKey"))),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
 
             builder.Services.AddControllers();
 

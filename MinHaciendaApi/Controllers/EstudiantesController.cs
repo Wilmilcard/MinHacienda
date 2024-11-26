@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Azure.Core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,8 @@ namespace MinHaciendaApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[AllowAnonymous]
+    [Authorize]
     public class EstudiantesController : ControllerBase
     {
         private readonly MinHaciendaContext _context;
@@ -25,6 +28,7 @@ namespace MinHaciendaApi.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         [HttpGet("[Action]")]
         public async Task<IActionResult> GetEstudiantes()
         {
