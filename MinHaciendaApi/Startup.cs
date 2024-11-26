@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MinHaciendaApi.Utils;
 using MinHaciendaDomain;
 using MinHaciendaDomain.DB;
 using System;
@@ -28,6 +29,9 @@ namespace MinHaciendaApi
             builder.Services.AddCustomizedDataStore(builder.Configuration);
             builder.Services.AddCustomizedRepository();
 
+            //Global Exceptions
+            builder.Services.AddTransient<GlobalExceptionHandler>();
+
             builder.Services.AddControllers();
 
             builder.Services.AddEndpointsApiExplorer();
@@ -42,6 +46,8 @@ namespace MinHaciendaApi
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseMiddleware<GlobalExceptionHandler>();
 
             app.UseHttpsRedirection();
 
