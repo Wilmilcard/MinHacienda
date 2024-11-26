@@ -27,6 +27,7 @@ namespace MinHaciendaApi
         {
             // Crear variable de conexion
             builder.Services.AddCustomizedDataStore(builder.Configuration);
+            builder.Services.AddCustomizedServicesProject();
             builder.Services.AddCustomizedRepository();
 
             //Global Exceptions

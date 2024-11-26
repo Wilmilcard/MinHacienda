@@ -22,6 +22,8 @@ namespace MinHaciendaDomain.DB
         public DbSet<Estudiante> estudiantes { get; set; }
         public DbSet<Inscripcion> inscripciones { get; set; }
         public DbSet<Profesor> profesores { get; set; }
+        public DbSet<User> usuarios { get; set; }
+        public DbSet<Sesion> sesiones { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

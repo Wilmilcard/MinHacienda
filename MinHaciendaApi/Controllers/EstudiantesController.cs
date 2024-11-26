@@ -231,6 +231,7 @@ namespace MinHaciendaApi.Controllers
 
             try
             {
+                request.Actualizado = Utils.Globals.FechaActual();
                 _context.estudiantes.Update(request);
                 await _context.SaveChangesAsync();
 
@@ -275,6 +276,8 @@ namespace MinHaciendaApi.Controllers
                 estudiante.Genero = request.Genero;
             if (request.Email != estudiante.Email)
                 estudiante.Email = request.Email;
+
+            estudiante.Actualizado = Utils.Globals.FechaActual();
 
             try
             {
