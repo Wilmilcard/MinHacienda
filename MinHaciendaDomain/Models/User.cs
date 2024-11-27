@@ -13,7 +13,7 @@ namespace MinHaciendaDomain.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        [Column("UserID")]
+        [Column("UserId")]
         public int UserId { get; set; }
 
         [Column("Username")]
@@ -31,10 +31,10 @@ namespace MinHaciendaDomain.Models
         //public bool IsAdmin { get; set; }
         //public bool IsPasswordChange { get; set; }
 
-        ////Foreign keys
+        //Foreign keys
         //public int EstudianteId { set; get; }
 
-        ////virtual
+        //virtual
         //public virtual Estudiante Estudiante { get; set; }
 
     }

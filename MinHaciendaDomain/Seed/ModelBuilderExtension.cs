@@ -1,4 +1,5 @@
-﻿using Bogus.Extensions.UnitedKingdom;
+﻿using Bogus;
+using Bogus.Extensions.UnitedKingdom;
 using Microsoft.EntityFrameworkCore;
 using MinHaciendaDomain.Models;
 using System;
@@ -34,6 +35,20 @@ namespace MinHaciendaDomain.Seed
                 modelBuilder.Entity<Profesor>().HasData(p);
             #endregion
 
+            #region Users
+            id = 1;
+            var fakerUser = new Bogus.Faker<User>()
+                .RuleFor(x => x.UserId, f => id++)
+                .RuleFor(x => x.Username, (f, u) => f.Internet.UserName("nombre", $"apellido_{id}"))
+                .RuleFor(x => x.PasswordHash, f => Encrypt.MD5("juan"))
+                .RuleFor(x => x.CreadoPor, f => system)
+                .RuleFor(x => x.Creado, f => fecha);
+
+            var listUsers = fakerUser.Generate(10);
+            foreach (var u in listUsers)
+                modelBuilder.Entity<User>().HasData(u);
+            #endregion
+
             #region Estudiantes
             id = 1;
             var fakerEstudiantes = new Bogus.Faker<Estudiante>()
@@ -43,10 +58,11 @@ namespace MinHaciendaDomain.Seed
                 .RuleFor(x => x.Email, f => f.Person.Email)
                 .RuleFor(x => x.Genero, f => random.Next(0,1) == 1 ? "M" : "F")
                 .RuleFor(x => x.FechaNacimiento, f => f.Person.DateOfBirth)
+                .RuleFor(x => x.UserId, f => random.Next(1,10))
                 .RuleFor(x => x.CreadoPor, f => system)
                 .RuleFor(x => x.Creado, f => fecha);
 
-            var listEstudiantes = fakerEstudiantes.Generate(500);
+            var listEstudiantes = fakerEstudiantes.Generate(30);
             foreach (var e in listEstudiantes)
                 modelBuilder.Entity<Estudiante>().HasData(e);
             #endregion

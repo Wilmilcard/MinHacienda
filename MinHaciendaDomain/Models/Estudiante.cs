@@ -19,5 +19,8 @@ namespace MinHaciendaDomain.Models
         public DateTime FechaNacimiento { get; set; }
         public string Genero { get; set; }
         public string Email { get; set; }
+
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
     }
 }
